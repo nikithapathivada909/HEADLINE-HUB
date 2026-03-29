@@ -1,0 +1,180 @@
+.news-section {
+  width: 90%;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-x: auto;
+}
+
+.news-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.news-item {
+  flex: 0 0 auto;
+  width: 300px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+.img_show {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.article_title {
+  font-size: 18px;
+  color: #222;
+  margin: 10px 0;
+}
+
+.article_description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+.guest-message-container {
+  background: linear-gradient(135deg, #ffffff 0%, #dfe9f3 100%);
+  border: 2px solid #007bff;
+  color: #003366;
+  padding: 5px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+  display:flex;
+  width:42%;
+  margin :auto;
+}
+
+.guest-message-container:hover {
+  transform: scale(1.05);
+}
+
+/* Guest Message */
+.guest-message {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #003366;
+  margin-right:25px;
+}
+
+/* Login Button */
+.login-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.4);
+  height:40px;
+  width:200px;
+}
+
+.login-button:hover {
+  background: #0056b3;
+  transform: scale(1.08);
+}
+
+/* Blurred Effect for Guests */
+.blurred {
+  filter: blur(8px);
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.blurred::after {
+  content: "Login to view full content";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  color: #003366;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #007bff;
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Default Save button */
+.save-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin:5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.save-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Saved state */
+.save-button.saved {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-button.saved:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+h2{
+  text-transform: uppercase;
+}

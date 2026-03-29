@@ -1,0 +1,156 @@
+
+
+/* Carousel Container */
+.carousel-container {
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Carousel Slide */
+.carousel-slide {
+  position: relative;
+  height: 450px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Background Image */
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide:hover .background-img {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+.carousel-slide:hover .overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+/* Content Title */
+.content-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(10px);
+  opacity: 0.9;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.carousel-slide:hover .content-title {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Slick Carousel Custom Styling */
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #64b5f6;
+  opacity: 1;
+}
+
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  background-color: rgba(26, 43, 60, 0.7);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 20px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: #1a2b3c;
+  transform: scale(1.1);
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* Loading State */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  color: #1a2b3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: 350px;
+  }
+  
+  .content-title {
+    font-size: 1.5rem;
+  }
+  
+  .slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-slide {
+    height: 250px;
+  }
+  
+  .content-title {
+    font-size: 1.2rem;
+  }
+  
+  .overlay {
+    padding: 1rem;
+  }
+}

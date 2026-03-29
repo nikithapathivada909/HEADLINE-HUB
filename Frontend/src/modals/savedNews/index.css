@@ -1,0 +1,74 @@
+/* Saved Articles Container */
+.saved-articles-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.saved-articles-container h2 {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid blue;
+  padding-bottom: 5px;
+}
+
+/* Saved Articles List */
+.saved-articles-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each Article */
+.each_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  border-left: 4px solid blue;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+}
+
+.each_item:hover {
+  background: #e3e8ff;
+}
+
+/* Article Title */
+.each_item p {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Show Article Button */
+.each_item button {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease-in-out;
+}
+
+.each_item button:hover {
+  background: black;
+}
+
+/* No Articles Message */
+.no-articles {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
